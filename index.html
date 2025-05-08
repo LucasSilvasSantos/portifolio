@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Lucas Silva Santos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f9fafb;
+            color: #2d3748;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3182ce, #63b3ed);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+        }
+
+        header img {
+            border-radius: 50%;
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            border: 4px solid white;
+            margin: 1rem 0;
+        }
+
+        section {
+            padding: 3rem 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #3182ce;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .experience {
+            background: white;
+            padding: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .experience:hover {
+            transform: translateY(-5px);
+        }
+
+        .experience h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+
+        .experience p {
+            color: #4a5568;
+            font-size: 1rem;
+        }
+
+        .experience a {
+            color: #3182ce;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .experience a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: #3182ce;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #3182ce;
+            color: white;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+            .experience {
+                padding: 1.5rem;
+            }
+            header img {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .contact-item {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagem para portifolio.jpg" alt="Foto de Lucas Silva Santos">
+        <h1>Lucas Silva Santos</h1>
+        <p>Desenvolvedor | Estudante de Ciência da Computação</p>
+    </header>
+
+    <section>
+        <h2 class="section-title"><i class="fas fa-user"></i> Sobre Mim</h2>
+        <p>Sou estudante de Ciência da Computação na PUC Minas (1 periodo), apaixonado por tecnologia e desenvolvimento de software. Possuo experiência em projetos colaborativos (feitos na faculdade) e estou aprimorando minhas habilidades em HTML, CSS, JavaScript, C e C++. Busco oportunidades para crescer profissionalmente, com entusiasmo para aprender e contribuir em equipes dinâmicas.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiências</h2>
+        <div class="experience">
+            <h3>Projeto: Portal Filmes do Homem-Aranha</h3>
+            <p>Desenvolvi um projeto individual proposto pela faculdade, um site sobre filmes do Homem-Aranha. O projeto está em constante aprimoramento, utilizando HTML, CSS e JavaScript para criar uma experiência interativa.</p>
+            <a href="https://lucassilvassantos.github.io/Filmes-Homem-Aranha/" target="_blank">Acesse o projeto</a>
+        </div>
+        <div class="experience">
+            <h3>Projeto: Organizador de Tarefas</h3>
+            <p>Participo de um projeto em grupo que visa organizar tarefas diárias. O sistema permite o cadastro de usuários, registro de atividades e horários, avaliando o cumprimento de metas. Desenvolvido com HTML, CSS e JavaScript, o projeto é atualizado semanalmente.</p>
+            <a href="https://lucassilvassantos.github.io/Minha-parte-TimeAwards/" target="_blank">Em progresso</a>
+        </div>
+       
+        <div class="experience">
+            <h3>Recreador - TiaRah Recreação</h3>
+            <p>Atuo como freelancer nos finais de semana em eventos recreativos, trabalhando em equipe para animar festas infantis, eventos corporativos, excursões e atividades em hotéis.</p>
+        </div>
+
+        <div class="experience">
+            <h3>Promotor de Eventos - BH Shopping</h3>
+            <p>Participei de uma ação promocional de Natal no BH Shopping, atuando temporariamente como balconista e auxiliar no cadastro de clientes, desenvolvendo habilidades de atendimento e organização.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Contato</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>(31) 99394-1760</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:lucsantos820@gmail.com">lucsantos820@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/lucas-silva-santos10" target="_blank">LinkedIn</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/LucasSilvasSantos" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lucas Silva Santos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
